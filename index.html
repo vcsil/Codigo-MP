@@ -6,6 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/form.css" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,12 +19,82 @@
 
         <link
             rel="SHORTCUT ICON"
-            href="midia/image/logo/Marca_iconeBranca.png"
+            href="./midia/image/logo/Marca_iconeBranca.png"
         />
 
         <title>Criar códigos para roupas</title>
     </head>
     <body>
-        <h1>oii</h1>
+        <header>
+            <a
+                href="http://meropepapadellis.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <img
+                    src="./midia/image/logo/Marca_icone.png"
+                    alt="Logo Merope Papadellis"
+                    width="50px"
+                />
+            </a>
+        </header>
+
+        <div class="formula"></div>
+
+        <div class="box">
+            <div class="box-categoria">
+                <form id="categoria">
+                    <fieldset>
+                        <legend>Categoria</legend>
+                        <div class="opcoes">
+                            <div class="opcao">
+                                <input
+                                    type="radio"
+                                    id="categoriaChoice1"
+                                    name="categoria"
+                                    value="acessorio"
+                                    onclick="mudaProdutos(this)"
+                                />
+                                <label for="categoriaChoice1">Acessório</label>
+                            </div>
+                            <div class="opcao">
+                                <input
+                                    type="radio"
+                                    id="categoriaChoice2"
+                                    name="categoria"
+                                    value="roupa"
+                                    onclick="mudaProdutos()"
+                                    checked
+                                />
+                                <label for="categoriaChoice2">Roupa</label>
+                            </div>
+                            <div class="opcao">
+                                <input
+                                    type="radio"
+                                    id="categoriaChoice3"
+                                    name="categoria"
+                                    value="calcado"
+                                    onclick="mudaProdutos()"
+                                />
+                                <label for="categoriaChoice3">Calçado</label>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="box-produto">
+                <form id="produto">
+                    <fieldset>
+                        <legend>Produto</legend>
+                        <div class="opcoes"></div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="box-codigo">
+                <h1>Loja</h1>
+            </div>
+        </div>
+
+        <script src="./script/script.js"></script>
     </body>
 </html>
