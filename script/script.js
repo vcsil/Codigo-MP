@@ -31,12 +31,12 @@ const calcado = { Tênis: "TE" };
 const categorias = { acessorio, roupa, calcado };
 const catg = { acessorio: "A", roupa: "R", calcado: "C" };
 
-async function mostraFormula() {
-    const resp = await fetch("../component/formula/formula.html");
-    const html = await resp.text();
-    document.querySelector(".formula").innerHTML = html;
-    return html;
-}
+// async function mostraFormula() {
+//     const resp = await fetch("../component/formula/formula.html");
+//     const html = await resp.text();
+//     document.querySelector(".formula").innerHTML = html;
+//     return html;
+// }
 
 function mudaProdutos() {
     adicionaData();
@@ -99,5 +99,5 @@ function adicionaData() {
     return;
 }
 
-mostraFormula();
+// mostraFormula();
 mudaProdutos();
