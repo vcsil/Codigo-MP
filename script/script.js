@@ -99,5 +99,11 @@ function adicionaData() {
     return;
 }
 
+function copyClipboard() {
+    const copyText = document.getElementById("codigo");
+    const codigo = copyText.outerText;
+    navigator.clipboard.writeText(codigo);
+}
+
 // mostraFormula();
 mudaProdutos();
